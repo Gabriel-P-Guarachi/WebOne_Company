@@ -627,6 +627,26 @@ body {
     .meet-team .container-cards .c-description {
       margin: 0px 5px; }
       .meet-team .container-cards .c-description .desc-people {
-        padding: 10px; } }
+        padding: 10px; }
+
+  .container-card {
+    width: 90%;
+    margin: 10px auto;
+    flex-direction: column; }
+    .container-card .my-card {
+      flex-basis: 100%; }
+      .container-card .my-card:nth-child(2) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px; }
+
+  .contact-details {
+    width: 90%;
+    flex-direction: column; }
+    .contact-details .info {
+      display: block; }
+      .contact-details .info > span {
+        display: block; } }
 
 /*# sourceMappingURL=style-general.css.map */
