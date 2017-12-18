@@ -386,6 +386,86 @@ body {
           .meet-team .container-cards .c-description .desc-people span span {
             color: #1ABC9C; }
 
+.container-card {
+  margin: 20px auto;
+  width: 80%;
+  display: flex; }
+  .container-card .my-card {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
+    .container-card .my-card img {
+      width: 100%;
+      height: 250px; }
+    .container-card .my-card .text-card {
+      background-color: #ddd;
+      display: flex;
+      flex-direction: column;
+      padding: 20px; }
+      .container-card .my-card .text-card span:nth-of-type(1) {
+        color: #34495D;
+        font-size: 20px;
+        font-weight: 600; }
+      .container-card .my-card .text-card span:nth-of-type(2) {
+        font-size: 13px; }
+      .container-card .my-card .text-card p {
+        padding-top: 20px;
+        text-align: justify; }
+  .container-card .my-card:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px; }
+  .container-card img {
+    width: 50px; }
+  .container-card .foot-card {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px; }
+    .container-card .foot-card .read-more a {
+      text-decoration: none;
+      color: #fff;
+      display: flex; }
+      .container-card .foot-card .read-more a i {
+        background-color: #34495D;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px; }
+
+.scroll {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin-bottom: 40px; }
+  .scroll .nro-scroll {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DEE3E4;
+    padding: 5px 15px; }
+  .scroll .last {
+    margin-right: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .scroll .next {
+    margin-left: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .scroll .last, .scroll .next {
+    background-color: #DEE3E4;
+    padding: 5px 10px; }
+  .scroll a {
+    text-decoration: none;
+    color: #34495D;
+    font-size: 15px; }
+
 @media (max-width: 768px) {
   .page-landing nav {
     justify-content: flex-start;
@@ -496,6 +576,24 @@ body {
     margin: 15px auto;
     flex-direction: column; }
     .about-company .history, .about-company .field {
-      padding: 0px; } }
+      padding: 0px; }
+
+  .meet-team .container-cards {
+    flex-direction: column;
+    margin-bottom: 0px; }
+
+  .meet-team {
+    width: 90%;
+    margin: 20px auto; }
+    .meet-team .container-cards .cards {
+      margin-bottom: 20px; }
+      .meet-team .container-cards .cards img {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px; }
+    .meet-team .container-cards .c-description {
+      margin: 0px 5px; }
+      .meet-team .container-cards .c-description .desc-people {
+        padding: 10px; } }
 
 /*# sourceMappingURL=style-general.css.map */

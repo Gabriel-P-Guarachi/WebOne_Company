@@ -396,6 +396,86 @@ body
                     font-weight: bold
                     & span
                         color: #1ABC9C
+//Container cards
+.container-card
+    margin: 20px auto
+    width: 80%
+    display: flex
+    & .my-card
+        flex-basis: 0
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        & img
+            width: 100%
+            height: 250px
+        & .text-card
+            background-color: #ddd
+            display: flex
+            flex-direction: column
+            padding: 20px
+            & span:nth-of-type(1)
+                color: #34495D
+                font-size: 20px
+                font-weight: 600
+            & span:nth-of-type(2)
+                font-size: 13px
+            & p
+                padding-top: 20px
+                text-align: justify
+    & .my-card:nth-child(2)
+        margin-left: 15px
+        margin-right: 15px
+    & img
+        width: 50px
+    & .foot-card
+        background-color: #4CAF50
+        display: flex
+        justify-content: space-between
+        padding: 10px 20px
+        color: #fff
+        font-size: 16px
+        & .read-more a
+            text-decoration: none
+            color: #fff
+            display: flex
+            & i
+                background-color: #34495D
+                border-radius: 50%
+                width: 25px
+                height: 25px
+                display: flex
+                justify-content: center
+                margin-right: 5px
+//Estilos del scroll con imagenes
+.scroll
+    width: 80%
+    margin: 20px auto
+    display: flex
+    justify-content: space-between
+    max-width: 450px
+    margin-bottom: 40px
+    & .nro-scroll
+        width: 100%
+        display: flex
+        justify-content: space-between
+        background-color: #DEE3E4
+        padding: 5px 15px
+    & .last
+        margin-right: 2px
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+    & .next
+        margin-left: 2px
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+    & .last, .next
+        background-color: #DEE3E4
+        padding: 5px 10px
+    & a
+        text-decoration: none
+        color: #34495D
+        font-size: 15px
 
 
 
@@ -520,23 +600,23 @@ body
         margin: 15px auto
         flex-direction: column
         & .history, .field
-            padding: 0px
-        //     position: relative
-        // & .history
-        //     & .content-year
-        //         margin-top: 25px
-        //         & .title
-        //             font-size: 13px
-        //     & .content-h
-        //         flex-direction: column
-        //         & .btn-year
-        //             flex-direction: row
-        //             margin-right: 0px
-        //             & .line-year
-        //                 width: 90%
-        //                 height: 3px
-        //                 top: 20px
-        //                 left: 12px
-
-        // & .field .title-h
-        //     margin-top: 20px
+            padding: 0px 
+    //Estilos de los cards
+    .meet-team .container-cards
+        flex-direction: column
+        margin-bottom: 0px
+    //Estilos de meet team
+    .meet-team
+        width: 90%
+        margin: 20px auto
+        & .container-cards
+            & .cards 
+                margin-bottom: 20px
+                & img
+                    width: 70px
+                    height: 70px
+                    margin-top: 30px
+            & .c-description
+                margin: 0px 5px
+                & .desc-people
+                    padding: 10px
