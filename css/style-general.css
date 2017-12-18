@@ -559,8 +559,17 @@ body {
           width: 350px;
           height: 250px;
           margin-top: 20px;
-          padding-left: 0px; } }
+          padding-left: 0px; }
+
+  .meet-team .container-cards {
+    flex-wrap: wrap;
+    margin-bottom: 0px; }
+    .meet-team .container-cards .cards {
+      margin-bottom: 20px; } }
 @media (max-width: 480px) {
+  .page-landing nav {
+    width: 70%; }
+
   .info-div .info-content {
     flex-wrap: wrap;
     width: 90%;
